@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # Install the diagprint CLI from the latest GitHub release.
 #
-#   curl -fsSL https://raw.githubusercontent.com/cybercore-tech/diagprint/main/install.sh | sh
+#   curl -fsSL https://raw.githubusercontent.com/cybercoretech/diagprint/main/install.sh | sh
 #
 # Supported: Linux (x86_64, aarch64) and macOS (x86_64, aarch64).
 # Alternative: `cargo install diagprint` builds the same CLI from crates.io.

@@ -1,7 +1,7 @@
 # 🩺 diagprint
 
-[![CI](https://github.com/cybercore-tech/diagprint/actions/workflows/ci.yml/badge.svg)](https://github.com/cybercore-tech/diagprint/actions/workflows/ci.yml)
-[![Release](https://github.com/cybercore-tech/diagprint/actions/workflows/release.yml/badge.svg)](https://github.com/cybercore-tech/diagprint/actions/workflows/release.yml)
+[![CI](https://github.com/cybercoretech/diagprint/actions/workflows/ci.yml/badge.svg)](https://github.com/cybercoretech/diagprint/actions/workflows/ci.yml)
+[![Release](https://github.com/cybercoretech/diagprint/actions/workflows/release.yml/badge.svg)](https://github.com/cybercoretech/diagprint/actions/workflows/release.yml)
 [![Crates.io](https://img.shields.io/crates/v/diagprint.svg)](https://crates.io/crates/diagprint)
 [![Docs.rs](https://docs.rs/diagprint/badge.svg)](https://docs.rs/diagprint)
 [![MSRV](https://img.shields.io/badge/MSRV-1.85-orange.svg)](#-minimum-supported-rust-version)
@@ -11,7 +11,7 @@
 
 Define diagnostics once, then carry them safely through terminal output, compiler tooling, editors, CI, code scanning, guarded remediation, verification, telemetry, and privacy-aware external reporting.
 
-🌐 [Project site & live demo](https://cybercore-tech.github.io/diagprint/) ·
+🌐 [Project site & live demo](https://cybercoretech.github.io/diagprint/) ·
 📖 [API docs](https://docs.rs/diagprint) ·
 📦 [crates.io](https://crates.io/crates/diagprint) ·
 📝 [Changelog](CHANGELOG.md) ·
@@ -347,7 +347,7 @@ diagprint = "0.8"
 ### ⌨️ CLI
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/cybercore-tech/diagprint/main/install.sh | sh
+curl -fsSL https://raw.githubusercontent.com/cybercoretech/diagprint/main/install.sh | sh
 ```
 
 Downloads the latest release for your platform (Linux or macOS,
@@ -1381,7 +1381,7 @@ Potential future work includes:
 
 ## 💬 Community
 
-- 🐛 Bugs and ideas: [GitHub issues](https://github.com/cybercore-tech/diagprint/issues)
+- 🐛 Bugs and ideas: [GitHub issues](https://github.com/cybercoretech/diagprint/issues)
 - 💬 Chat: [Discord](https://discord.gg/vBMcK5wAx)
 - 🔒 Security reports: security@cybercoretech.net (please don't open a public issue)
 - ✉️ Everything else: dev@cybercoretech.net

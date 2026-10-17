@@ -13,7 +13,7 @@ A metadata and documentation patch. No code or API changes.
 ### Changed
 
 - Repository, homepage and documentation links in every published package now
-  point to `github.com/cybercore-tech/diagprint`. The 0.8.0 packages still
+  point to `github.com/cybercoretech/diagprint`. The 0.8.0 packages still
   linked the archived `darkstardevx/diagprint` repository on crates.io.
 - The README badges and links point to `cybercore-tech`, and the README
   documents the CLI installer (`install.sh`) and `cargo install diagprint`.
