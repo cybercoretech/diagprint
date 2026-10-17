@@ -156,7 +156,7 @@ sample_rate = 1.5
   function renderSarif(ds) {
     const rules = [...new Set(ds.map(d => d.code))];
     const loc = (l) => ({ physicalLocation: { artifactLocation: { uri: FILE }, region: { startLine: l.line, startColumn: l.col, endColumn: l.col + l.len } } });
-    const doc = { $schema: 'https://json.schemastore.org/sarif-2.1.0.json', version: '2.1.0', runs: [{ tool: { driver: { name: 'diagprint', version: '0.8.0', informationUri: 'https://github.com/cybercore-tech/diagprint', rules: rules.map(id => ({ id, shortDescription: { text: ds.find(d => d.code === id).message.replace(/`/g, '') } })) } },
+    const doc = { $schema: 'https://json.schemastore.org/sarif-2.1.0.json', version: '2.1.0', runs: [{ tool: { driver: { name: 'diagprint', version: '0.8.0', informationUri: 'https://github.com/cybercoretech/diagprint', rules: rules.map(id => ({ id, shortDescription: { text: ds.find(d => d.code === id).message.replace(/`/g, '') } })) } },
       results: ds.map(d => { const r = { ruleId: d.code, ruleIndex: rules.indexOf(d.code), level: d.severity === 'error' ? 'error' : 'warning', message: { text: d.message.replace(/`/g, '') }, locations: [loc(d)] }; if (d.secondary) r.relatedLocations = [{ id: 1, ...loc(d.secondary), message: { text: d.secondary.label } }]; return r; }) }] };
     return hiJson(JSON.stringify(doc, null, 2));
   }

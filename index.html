@@ -8,8 +8,8 @@
   <meta name="theme-color" content="#0e100f">
   <meta property="og:title" content="diagprint — make every failure legible">
   <meta property="og:description" content="A Rust diagnostics lifecycle framework: structured diagnostics, rendering, guarded remediation, CI, editors, telemetry and forensics.">
-  <meta property="og:image" content="https://cybercore-tech.github.io/diagprint/assets/img/social-card.png">
-  <meta property="og:url" content="https://cybercore-tech.github.io/diagprint/">
+  <meta property="og:image" content="https://cybercoretech.github.io/diagprint/assets/img/social-card.png">
+  <meta property="og:url" content="https://cybercoretech.github.io/diagprint/">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,7 +18,7 @@
   <link rel="stylesheet" href="assets/css/site.css?v=7">
   <script>
     window.SITE = {
-      dataRoot: 'https://cybercore-tech.github.io/data',
+      dataRoot: 'https://cybercoretech.github.io/data',
       defaultTheme: 'dp-sector-neural',
       mashups: [
         { id: 'dp-sector-neural', label: 'SECTOR NEURAL', base: 'dystopian-sector', accent: 'cyberdyne-neural' }
@@ -29,7 +29,7 @@
   <script src="assets/js/lab.js?v=7" defer></script>
   <script src="assets/js/forensics.js?v=7" defer></script>
   <script src="assets/js/fx.js?v=7" defer></script>
-  <script type="module" src="https://cybercore-tech.github.io/kit/contact.js"></script>
+  <script type="module" src="https://cybercoretech.github.io/kit/contact.js"></script>
 </head>
 <body>
   <svg width="0" height="0" style="position:absolute" aria-hidden="true">
@@ -141,18 +141,18 @@
           <p class="mega-k">READ THE MANUAL</p>
           <div class="mega-list">
             <a href="https://docs.rs/diagprint"><svg><use href="#i-crate"/></svg><b>docs.rs</b><span>API reference</span></a>
-            <a href="https://github.com/cybercore-tech/diagprint#readme"><svg><use href="#i-md"/></svg><b>README</b><span>guide and safety model</span></a>
-            <a href="https://github.com/cybercore-tech/diagprint/blob/main/CHANGELOG.md"><svg><use href="#i-timeline"/></svg><b>Changelog</b><span>every release</span></a>
-            <a href="https://github.com/cybercore-tech/diagprint/tree/main/docs"><svg><use href="#i-plain"/></svg><b>Specs</b><span>canonical, delta, receipt, forensics v1</span></a>
+            <a href="https://github.com/cybercoretech/diagprint#readme"><svg><use href="#i-md"/></svg><b>README</b><span>guide and safety model</span></a>
+            <a href="https://github.com/cybercoretech/diagprint/blob/main/CHANGELOG.md"><svg><use href="#i-timeline"/></svg><b>Changelog</b><span>every release</span></a>
+            <a href="https://github.com/cybercoretech/diagprint/tree/main/docs"><svg><use href="#i-plain"/></svg><b>Specs</b><span>canonical, delta, receipt, forensics v1</span></a>
             <a href="#start"><svg><use href="#i-bolt"/></svg><b>Quick start</b><span>first diagnostic in 10 lines</span></a>
           </div>
         </div>
       </div>
-      <a class="mi-link mob" href="https://github.com/cybercore-tech/diagprint"><svg><use href="#i-github"/></svg>SOURCE</a>
+      <a class="mi-link mob" href="https://github.com/cybercoretech/diagprint"><svg><use href="#i-github"/></svg>SOURCE</a>
       <a class="mi-link mob" href="https://discord.gg/vBMcK5wAx"><svg><use href="#i-discord"/></svg>DISCORD</a>
     </nav>
     <div class="nav-tools">
-      <a class="ver" id="verChip" href="https://github.com/cybercore-tech/diagprint/releases" title="Latest release"><i></i><span id="verText">v0.8.0</span></a>
+      <a class="ver" id="verChip" href="https://github.com/cybercoretech/diagprint/releases" title="Latest release"><i></i><span id="verText">v0.8.0</span></a>
       <button class="kbtn" id="openPalette" type="button" aria-label="Command palette"><svg><use href="#i-search"/></svg><span>SEARCH</span><kbd>⌘K</kbd></button>
       <div class="theme-picker" id="picker">
         <button class="theme-button" id="themeButton" type="button" aria-haspopup="listbox" aria-expanded="false" aria-controls="themeMenu" title="Theme"><svg><use href="#i-palette"/></svg><span id="themeLabel">SECTOR NEURAL</span><svg class="chev"><use href="#i-chev"/></svg></button>
@@ -162,7 +162,7 @@
         </div>
       </div>
       <a class="ico" href="https://discord.gg/vBMcK5wAx" aria-label="Discord"><svg><use href="#i-discord"/></svg></a>
-      <a class="ico src" href="https://github.com/cybercore-tech/diagprint" aria-label="Source on GitHub"><svg><use href="#i-github"/></svg><span>SOURCE</span></a>
+      <a class="ico src" href="https://github.com/cybercoretech/diagprint" aria-label="Source on GitHub"><svg><use href="#i-github"/></svg><span>SOURCE</span></a>
       <button class="burger" id="burger" type="button" aria-label="Menu" aria-expanded="false"><i></i><i></i><i></i></button>
     </div>
   </header>
@@ -196,7 +196,7 @@
               </div>
             </div>
             <button class="up-cmd" id="upCmd" type="button" aria-label="Copy install command">
-              <span class="up-prompt">❯</span><code id="upText">curl -fsSL https://raw.githubusercontent.com/cybercore-tech/diagprint/main/install.sh | sh</code>
+              <span class="up-prompt">❯</span><code id="upText">curl -fsSL https://raw.githubusercontent.com/cybercoretech/diagprint/main/install.sh | sh</code>
               <span class="up-copy"><svg class="ic-copy"><use href="#i-copy"/></svg><svg class="ic-ok"><use href="#i-check"/></svg><b id="upLabel">COPY</b></span>
               <span class="up-beam" aria-hidden="true"></span>
             </button>
@@ -392,7 +392,7 @@
       <div class="foot-row">
         <a class="brand" href="#top"><svg class="brand-sigil"><use href="#sigil"/></svg><span class="brand-name">diagprint<small>MIT OR APACHE-2.0 · Copyright (c) 2026 Cybercore Tech</small></span></a>
         <p class="keys"><kbd>⌘K</kbd> search <kbd>/</kbd> search <kbd>G</kbd><kbd>L</kbd> lab</p>
-        <nav class="foot-links"><a href="https://cybercore-tech.github.io/">CYBERCORE TECH</a><a href="https://cybercore-tech.github.io/cybercore/">THEME SYSTEM</a><a href="https://crates.io/crates/diagprint">CRATES.IO</a><a href="https://docs.rs/diagprint">DOCS.RS</a></nav>
+        <nav class="foot-links"><a href="https://cybercoretech.github.io/">CYBERCORE TECH</a><a href="https://cybercoretech.github.io/cybercore/">THEME SYSTEM</a><a href="https://crates.io/crates/diagprint">CRATES.IO</a><a href="https://docs.rs/diagprint">DOCS.RS</a></nav>
       </div>
     </div>
   </footer>

@@ -157,7 +157,7 @@
   (function uplink() {
     const btn = $('#upCmd'); if (!btn) return;
     const CMD = {
-      curl: { text: 'curl -fsSL https://raw.githubusercontent.com/cybercore-tech/diagprint/main/install.sh | sh', meta: null },
+      curl: { text: 'curl -fsSL https://raw.githubusercontent.com/cybercoretech/diagprint/main/install.sh | sh', meta: null },
       cargo: { text: 'cargo install diagprint', meta: ['BUILDS FROM CRATES.IO', 'RUST 1.85+', '→ ~/.cargo/bin'] },
       lib: { text: 'cargo add diagprint', meta: ['LIBRARY CRATE', 'RUST 2024', 'ALL FEATURES OFF BY DEFAULT'] }
     };
@@ -322,14 +322,14 @@
     const go = h => () => $(h).scrollIntoView({ behavior: still ? 'auto' : 'smooth' });
     const items = () => [
       ...SECTIONS.map(([n, h, ic]) => ({ g: 'JUMP TO', n, ic, hint: h.slice(1), run: go(h) })),
-      { g: 'ACTIONS', n: 'Copy the install command', ic: 'copy', hint: 'curl | sh', run: () => copy('curl -fsSL https://raw.githubusercontent.com/cybercore-tech/diagprint/main/install.sh | sh', 'INSTALL COMMAND COPIED') },
+      { g: 'ACTIONS', n: 'Copy the install command', ic: 'copy', hint: 'curl | sh', run: () => copy('curl -fsSL https://raw.githubusercontent.com/cybercoretech/diagprint/main/install.sh | sh', 'INSTALL COMMAND COPIED') },
       { g: 'ACTIONS', n: 'Copy cargo add diagprint', ic: 'copy', hint: 'library', run: () => copy('cargo add diagprint') },
       { g: 'ACTIONS', n: 'Run a FixPlan in the lab', ic: 'wrench', hint: 'lab', run: () => { go('#lab')(); setTimeout(() => $('#labFix').click(), 500); } },
       { g: 'ACTIONS', n: 'Tamper with diagnostic history', ic: 'chain', hint: 'forensics', run: () => { go('#forensics')(); setTimeout(() => $('#tamper').click(), 500); } },
       { g: 'ACTIONS', n: 'Random theme', ic: 'palette', hint: 'R', run: randomTheme },
       ...['why', 'timeline', 'blame', 'graph', 'replay'].map(c => ({ g: 'CLI', n: `diagprint ${c} .diagprint/history <FP>`, ic: c === 'why' ? 'why' : c === 'timeline' ? 'timeline' : c === 'blame' ? 'blame' : c === 'graph' ? 'graph' : 'replay', hint: 'copy', run: () => copy(`diagprint ${c} .diagprint/history <FINGERPRINT>`) })),
       { g: 'CLI', n: 'diagprint scan . --static --history .diagprint/history --git-provenance', ic: 'term', hint: 'copy', run: () => copy('diagprint scan . --static --history .diagprint/history --git-provenance') },
-      ...[['docs.rs', 'https://docs.rs/diagprint', 'crate'], ['GitHub', 'https://github.com/cybercore-tech/diagprint', 'github'], ['crates.io', 'https://crates.io/crates/diagprint', 'crate'], ['Releases', 'https://github.com/cybercore-tech/diagprint/releases', 'timeline'], ['Discord', 'https://discord.gg/vBMcK5wAx', 'discord'], ['Cybercore theme system', 'https://cybercore-tech.github.io/cybercore/', 'palette']].map(([n, u, ic]) => ({ g: 'LINKS', n, ic: ic, hint: '↗', run: () => { location.href = u; } })),
+      ...[['docs.rs', 'https://docs.rs/diagprint', 'crate'], ['GitHub', 'https://github.com/cybercoretech/diagprint', 'github'], ['crates.io', 'https://crates.io/crates/diagprint', 'crate'], ['Releases', 'https://github.com/cybercoretech/diagprint/releases', 'timeline'], ['Discord', 'https://discord.gg/vBMcK5wAx', 'discord'], ['Cybercore theme system', 'https://cybercoretech.github.io/cybercore/', 'palette']].map(([n, u, ic]) => ({ g: 'LINKS', n, ic: ic, hint: '↗', run: () => { location.href = u; } })),
       ...(window.DP ? window.DP.all().map(t => ({ g: 'THEMES', n: window.DP.labelOf(t), ic: 'palette', hint: 'theme', run: () => window.DP.apply(t) })) : [])
     ];
     let all = [], shown = [], sel = 0;
