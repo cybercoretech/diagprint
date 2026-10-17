@@ -7,7 +7,7 @@
 # Alternative: `cargo install diagprint` builds the same CLI from crates.io.
 set -eu
 
-REPO="cybercore-tech/diagprint"
+REPO="cybercoretech/diagprint"
 INSTALL_DIR="${DIAGPRINT_INSTALL_DIR:-$HOME/.local/bin}"
 
 die() {
