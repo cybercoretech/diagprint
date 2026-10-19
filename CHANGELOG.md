@@ -6,6 +6,13 @@ The project follows Semantic Versioning.
 
 ## [Unreleased]
 
+## [diagprint-axum 0.8.4] - 2026-10-18
+
+Correct the Axum release branch's Cybercore dependency to use the published
+0.4.x crate instead of a retired Git URL, so clean MSRV lockfile resolution
+works after repository migration. Refresh remaining Diagprint repository links.
+No API or runtime changes.
+
 ## [diagprint-axum 0.8.3] - 2026-10-18
 
 Metadata-only release: point the crate at the current `cybercoretech` repository

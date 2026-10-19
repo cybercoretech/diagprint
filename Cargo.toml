@@ -5,8 +5,8 @@ edition = "2024"
 rust-version = "1.85"
 description = "A Rust diagnostics lifecycle framework for structured diagnostics, rendering, remediation, CI, editors, and telemetry."
 license = "MIT OR Apache-2.0"
-repository = "https://github.com/darkstardevx/diagprint"
-homepage = "https://github.com/darkstardevx/diagprint"
+repository = "https://github.com/cybercoretech/diagprint"
+homepage = "https://cybercoretech.github.io/diagprint/"
 documentation = "https://docs.rs/diagprint"
 readme = "README.md"
 keywords = ["diagnostics", "errors", "logging", "terminal", "reporting"]
@@ -137,7 +137,6 @@ optional = true
 
 [dependencies.cybercore]
 version = "0.4.0"
-git = "https://github.com/darkstardevx/cybercore.git"
 optional = true
 
 [dependencies.reqwest]
