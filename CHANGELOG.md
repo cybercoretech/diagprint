@@ -6,6 +6,11 @@ The project follows Semantic Versioning.
 
 ## [Unreleased]
 
+## [diagprint-axum 0.8.3] - 2026-10-18
+
+Metadata-only release: point the crate at the current `cybercoretech` repository
+and project page. No API or runtime changes.
+
 ### Added
 
 - Began the `diagprint-axum 0.8.2` operational-maturity line with automated
