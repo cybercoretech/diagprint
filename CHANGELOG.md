@@ -6,6 +6,11 @@ The project follows Semantic Versioning.
 
 ## [Unreleased]
 
+## [0.8.2] - 2026-10-18
+
+A metadata-only release: point all published `diagprint` packages at the current
+`cybercoretech` repository and project page. No runtime or API changes.
+
 ## [0.8.1] - 2026-10-02
 
 A metadata and documentation patch. No code or API changes.

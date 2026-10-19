@@ -1,12 +1,12 @@
 [package]
 name = "diagprint"
-version = "0.8.1"
+version = "0.8.2"
 edition = "2024"
 rust-version = "1.85"
 description = "A Rust diagnostics lifecycle framework for structured diagnostics, rendering, remediation, CI, editors, and telemetry."
 license = "MIT OR Apache-2.0"
 repository = "https://github.com/cybercoretech/diagprint"
-homepage = "https://github.com/cybercoretech/diagprint"
+homepage = "https://cybercoretech.github.io/diagprint/"
 documentation = "https://docs.rs/diagprint"
 readme = "README.md"
 keywords = ["diagnostics", "errors", "logging", "terminal", "reporting"]
@@ -96,7 +96,7 @@ version = "0.4"
 optional = true
 
 [dependencies.diagprint-derive]
-version = "0.8.1"
+version = "0.8.2"
 path = "crates/diagprint-derive"
 optional = true
 
