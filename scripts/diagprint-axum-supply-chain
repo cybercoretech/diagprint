@@ -1,15 +1,15 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-branch="axum-v0.8.2"
+branch="axum-v0.8.3-metadata"
 
 manifest="crates/diagprint-axum/Cargo.toml"
 
 release_tag="diagprint-axum-v0.8.1"
 release_source="530d267c82cceff3b81e859fdc8abc364892fab1"
 
-default_dependencies="docs/security/diagprint-axum-0.8.2-dependencies-default.txt"
-async_dependencies="docs/security/diagprint-axum-0.8.2-dependencies-async.txt"
+default_dependencies="docs/security/diagprint-axum-0.8.4-dependencies-default.txt"
+async_dependencies="docs/security/diagprint-axum-0.8.4-dependencies-async.txt"
 
 rule() {
     printf '%*s\n' 78 '' | tr ' ' '='

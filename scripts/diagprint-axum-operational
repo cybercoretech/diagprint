@@ -2,7 +2,7 @@
 set -euo pipefail
 
 package="diagprint-axum"
-branch="axum-v0.8.2"
+branch="axum-v0.8.3-metadata"
 manifest="crates/diagprint-axum/Cargo.toml"
 baseline="0.8.1"
 release_tag="diagprint-axum-v0.8.1"
@@ -46,14 +46,14 @@ path = Path(
 with path.open("rb") as handle:
     manifest = tomllib.load(handle)
 
-assert manifest["package"]["version"] == "0.8.2"
+assert manifest["package"]["version"] == "0.8.4"
 assert manifest["package"]["rust-version"] == "1.85"
 assert manifest["features"]["default"] == []
 assert manifest["features"]["async-delivery"] == [
     "dep:diagprint-async"
 ]
 
-print("PASS: 0.8.2 development manifest")
+print("PASS: 0.8.4 development manifest")
 print("PASS: Rust 1.85 contract")
 print("PASS: feature contract")
 PY
@@ -164,7 +164,7 @@ echo "Baseline release:"
 echo "  $baseline"
 echo
 echo "Development line:"
-echo "  0.8.2"
+echo "  0.8.4"
 echo
 echo "Contracts:"
 echo "  ✓ SemVer"

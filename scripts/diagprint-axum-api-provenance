@@ -7,8 +7,8 @@ nightly="nightly-2025-11-22"
 
 manifest="crates/diagprint-axum/Cargo.toml"
 
-default_snapshot="docs/security/diagprint-axum-0.8.2-public-api-default.txt"
-async_snapshot="docs/security/diagprint-axum-0.8.2-public-api-all-features.txt"
+default_snapshot="docs/security/diagprint-axum-0.8.4-public-api-default.txt"
+async_snapshot="docs/security/diagprint-axum-0.8.4-public-api-all-features.txt"
 
 fail() {
     echo "ERROR: $*" >&2
@@ -109,7 +109,7 @@ cmp \
     "$current_default" ||
 {
     echo
-    echo "ERROR: 0.8.2 default public API differs from immutable 0.8.1"
+    echo "ERROR: 0.8.4 default public API differs from immutable 0.8.1"
     diff -u \
         "$baseline_default" \
         "$current_default" || true
@@ -121,7 +121,7 @@ cmp \
     "$current_async" ||
 {
     echo
-    echo "ERROR: 0.8.2 all-feature public API differs from immutable 0.8.1"
+    echo "ERROR: 0.8.4 all-feature public API differs from immutable 0.8.1"
     diff -u \
         "$baseline_async" \
         "$current_async" || true

@@ -17,7 +17,7 @@ cpufeatures|0.2.17|registry+https://github.com/rust-lang/crates.io-index|59ed583
 crypto-common|0.1.7|registry+https://github.com/rust-lang/crates.io-index|78c8292055d1c1df0cce5d180393dc8cce0abec0a7102adb6c7b1eef6016d60a|std
 diagprint|0.7.1|path:.|-|default
 diagprint-async|0.7.0|path:crates/diagprint-async|-|
-diagprint-axum|0.8.2|path:crates/diagprint-axum|-|async-delivery
+diagprint-axum|0.8.4|path:crates/diagprint-axum|-|async-delivery
 digest|0.10.7|registry+https://github.com/rust-lang/crates.io-index|9ed9a281f7bc9b7576e61468ba615a66a5c8cfdff42420a70aa82701a3b1e292|alloc,block-buffer,core-api,default,std
 equivalent|1.0.2|registry+https://github.com/rust-lang/crates.io-index|877a4ace8713b0bcf2a4e7eec82529c029f1d0619886d18145fea96c3ffe5c0f|
 errno|0.3.14|registry+https://github.com/rust-lang/crates.io-index|39cab71617ae0d63f51a36d69f866391735b51691dbda63cf6f96d042b63efeb|std
