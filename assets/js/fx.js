@@ -195,7 +195,7 @@
   })();
 
   /* ═════════ live version ═════════ */
-  fetch('https://api.github.com/repos/cybercore-tech/diagprint/releases/latest', { headers: { Accept: 'application/vnd.github+json' } })
+  fetch('https://api.github.com/repos/cybercoretech/diagprint/releases/latest', { headers: { Accept: 'application/vnd.github+json' } })
     .then(r => (r.ok ? r.json() : null)).then(rel => {
       if (!rel || !rel.tag_name) return;
       const v = rel.tag_name.replace(/^(cli-)?v/, '');
