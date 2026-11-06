@@ -25,11 +25,151 @@
       ]
     };
   </script>
-  <script src="assets/js/theme.js?v=7" defer></script>
+  <script src="assets/js/theme.js?v=8" defer></script>
   <script src="assets/js/lab.js?v=7" defer></script>
   <script src="assets/js/forensics.js?v=7" defer></script>
   <script src="assets/js/fx.js?v=7" defer></script>
   <script type="module" src="https://cybercoretech.github.io/kit/contact.js"></script>
+  <link rel="stylesheet" href="https://cybercoretech.github.io/kit/chooser.css">
+  <script>window.SITE = Object.assign(window.SITE || {}, {"themeVars": {"white": ["--white", "--fg"]}});</script>
+  <script type="module" src="https://cybercoretech.github.io/kit/chooser.js"></script>
+  <style id="cc-mobile-first">
+/* Mobile floor (phones + tablets): readable text and finger-sized targets.
+   Generated per range from what renders under 11px / 24px; desktop untouched. */
+@media (max-width: 600px) {
+  div.up-tabs > button,
+  #upMeta > span,
+  span.ht-auto,
+  div.ht-foot > span.ok,
+  div.ht-foot > span,
+  #htMode,
+  button.stage > small,
+  #labRev,
+  #labReset,
+  b.e,
+  b.w,
+  b.f,
+  #edStatus > span,
+  #fmtTabs > button,
+  #labCounts,
+  #labCopyOut,
+  #fixBound,
+  #labFix,
+  #labStale,
+  span.s-tag,
+  span.g-n,
+  div.fx-legend > span,
+  button.run > small,
+  div.blk > b,
+  span.prev,
+  div.blk > span,
+  #tamper,
+  #heal,
+  p.tk > small { font-size: 11px !important; }
+}
+@media (min-width: 601px) and (max-width: 860px) {
+  span.brand-name > small,
+  div.up-tabs > button,
+  #upMeta > span,
+  span.ht-auto,
+  div.ht-foot > span.ok,
+  div.ht-foot > span,
+  #htMode,
+  button.stage > small,
+  #labRev,
+  #labReset,
+  b.e,
+  b.w,
+  b.f,
+  #edStatus > span,
+  #fmtTabs > button,
+  #labCounts,
+  #labCopyOut,
+  #fixBound,
+  #labFix,
+  #labStale,
+  span.s-tag,
+  span.g-n,
+  div.fx-legend > span,
+  button.run > small,
+  div.blk > b,
+  span.prev,
+  div.blk > span,
+  #tamper,
+  #heal,
+  p.tk > small { font-size: 11px !important; }
+}
+@media (min-width: 861px) and (max-width: 1024px) {
+  span.brand-name > small,
+  div.up-tabs > button,
+  #upMeta > span,
+  span.ht-auto,
+  div.ht-foot > span.ok,
+  div.ht-foot > span,
+  #htMode,
+  button.stage > small,
+  #labRev,
+  #labReset,
+  b.e,
+  b.w,
+  b.f,
+  #edStatus > span,
+  #fmtTabs > button,
+  #labCounts,
+  #labCopyOut,
+  #fixBound,
+  #labFix,
+  #labStale,
+  span.s-tag,
+  span.g-n,
+  div.fx-legend > span,
+  button.run > small,
+  div.blk > b,
+  span.prev,
+  div.blk > span,
+  #tamper,
+  #heal,
+  p.tk > small { font-size: 11px !important; }
+}
+@media (pointer: coarse) {
+  div.up-tabs > button,
+  #labReset,
+  #labCopyOut,
+  #heal,
+  nav.foot-links > a,
+  #tamper { min-height: 24px; min-width: 24px; }
+}
+/* Mobile floor (phones + tablets): readable text and finger-sized targets.
+   Generated per range from what renders under 11px / 24px; desktop untouched. */
+@media (max-width: 600px) {
+  button.surf > code,
+  button.copy,
+  kbd { font-size: 11px !important; }
+}
+@media (min-width: 601px) and (max-width: 860px) {
+  kbd,
+  button.surf > code,
+  button.copy { font-size: 11px !important; }
+}
+@media (min-width: 861px) and (max-width: 1024px) {
+  kbd,
+  button.surf > code,
+  button.copy { font-size: 11px !important; }
+}
+/* Layout fixes: phones and tablets only; laptops and desktops untouched. */
+@media (max-width: 1024px) {
+  /* Mobile first: nothing may make the page wider than the screen.
+     Grid/flex columns may shrink below their widest line; code scrolls in place. */
+  pre { max-width: 100%; overflow-x: auto; }
+  img, video { max-width: 100%; height: auto; }
+  div.ht-foot > * { min-width: 0; }
+  #ticker > * { min-width: 0; }
+  #nav > * { min-width: 0; }
+  div.nav-tools > * { min-width: 0; }
+  /* Long paths and URLs in inline code may break anywhere instead of widening the page. */
+  :not(pre) > code { overflow-wrap: anywhere; }
+}
+  </style>
 </head>
 <body>
   <svg width="0" height="0" style="position:absolute" aria-hidden="true">
@@ -154,13 +294,7 @@
     <div class="nav-tools">
       <a class="ver" id="verChip" href="https://github.com/cybercoretech/diagprint/releases" title="Latest release"><i></i><span id="verText">v0.8.0</span></a>
       <button class="kbtn" id="openPalette" type="button" aria-label="Command palette"><svg><use href="#i-search"/></svg><span>SEARCH</span><kbd>⌘K</kbd></button>
-      <div class="theme-picker" id="picker">
-        <button class="theme-button" id="themeButton" type="button" aria-haspopup="listbox" aria-expanded="false" aria-controls="themeMenu" title="Theme"><svg><use href="#i-palette"/></svg><span id="themeLabel">SECTOR NEURAL</span><svg class="chev"><use href="#i-chev"/></svg></button>
-        <div class="theme-menu" id="themeMenu" hidden>
-          <div class="theme-search"><input id="themeFilter" type="search" placeholder="FILTER THEMES…" aria-label="Filter themes" autocomplete="off" spellcheck="false"></div>
-          <div class="theme-list" id="themeList" role="listbox" aria-label="Theme"></div>
-        </div>
-      </div>
+      <div class="theme-picker" id="picker"><cybercore-theme-chooser adopt><button class="theme-button" id="themeButton" type="button">Sector Neural</button></cybercore-theme-chooser></div>
       <a class="ico" href="https://discord.gg/vBMcK5wAx" aria-label="Discord"><svg><use href="#i-discord"/></svg></a>
       <a class="ico src" href="https://github.com/cybercoretech/diagprint" aria-label="Source on GitHub"><svg><use href="#i-github"/></svg><span>SOURCE</span></a>
       <button class="burger" id="burger" type="button" aria-label="Menu" aria-expanded="false"><i></i><i></i><i></i></button>
